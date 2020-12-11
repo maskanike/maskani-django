@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
-def hello_world(request):
-    return render(request, 'hello_world.html', {})
+from .forms import FlatForm
+
+def flats(request):
+    form = FlatForm()
+    return render(request, 'flats.html', {'form': form })
