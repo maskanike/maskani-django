@@ -22,5 +22,5 @@ from material.frontend import urls as frontend_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(frontend_urls)),
-    path('', include('apps.flat.urls')),
+    path('', include('apps.property.urls')),
 ]

@@ -1,3 +1,6 @@
 from django.db import models
-
-# Create your models here.
+from apps.properties.models import Property
+class Unit(models.Model):
+    name = models.CharField(max_length=100)
+    active = models.BooleanField(default=False)
+    propert  = models.ForeignKey(Property, on_delete=models.CASCADE)

@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'material',
     'material.frontend',
 
-    'apps.flat'
+    'apps.property'
 ]
 
 MIDDLEWARE = [
