@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'material',
-    'material.frontend',
 
-    'apps.property'
+    'apps.user',
+    'apps.property',
+    'apps.unit',
 ]
 
 MIDDLEWARE = [
@@ -118,8 +119,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    (BASE_DIR / 'static')
+]

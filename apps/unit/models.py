@@ -1,5 +1,5 @@
 from django.db import models
-from apps.properties.models import Property
+from apps.property.models import Property
 class Unit(models.Model):
     name = models.CharField(max_length=100)
     active = models.BooleanField(default=False)
